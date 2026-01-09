@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #f6f1ef;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ヘッダー */
+#top-bar {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  background: #b88f9a;
+  color: #000;
+}
+
+#current-month {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: #b88f9a;
+  color: #000;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+#month-label {
+  width: 170px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 3vh;
+  position: unset;
+}
+
+#header-icons {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  right: 15px;
+}
+
+/* 曜日 */
+#weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #d8c6cc;
+  text-align: center;
+  font-size: 12px;
+  height: 2.5vh;
+  position: relative;
+}
+
+/* カレンダー */
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 50vh;
+}
+
+.day {
+  border: 1px solid #999;
+  padding: 2px;
+  font-size: 10px;
+}
+
+.day.other {
+  color: #aaa;
+}
+
+.day.today {
+  background: #d7c7d6;
+}
+
+/* 日付ヘッダー */
+#day-header {
+  background: #d8c6cc;
+  padding-left: 4px;
+  height: 2.5vh;
+  font-size: 12px;
+}
+
+/* メモ */
+#memo-area {
+  height: 38vh;
+}
+
+/* フッター */
+#bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  background: #b88f9a;
+}
+
+/* 黒丸アイコン */
+.icon {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+}

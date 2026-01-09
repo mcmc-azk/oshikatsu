@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>Calendar UI</title>
+			<!-- CSS -->
+			<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="app">
+
+		  <!-- ヘッダー -->
+		  <header id="top-bar">
+		    <div id="current-month">
+		      <button id="prev" class="nav-btn">‹</button>
+		      <div id="month-label">2026年1月</div>
+		      <button id="next" class="nav-btn">›</button>
+            
+		      <div id="header-icons">
+		        <span class="icon"></span>
+		        <span class="icon"></span>
+		        <span class="icon"></span>
+		      </div>
+		    </div>
+		  </header>
+		  
+		  <!-- 曜日 -->
+		  <div id="weekdays">
+		    <div>日</div><div>月</div><div>火</div>
+		    <div>水</div><div>木</div><div>金</div><div>土</div>
+		  </div>
+
+		  <!-- カレンダー -->
+		  <div id="calendar-grid">
+		    <!-- 42マス -->
+		    <div class="day other">28</div>
+		    <!-- … -->
+		    <div class="day today">9</div>
+		  </div>
+
+		  <!-- 日付表示 -->
+		  <div id="day-header">2026年1月9日</div>
+
+		  <!-- 日記 -->
+		  <div id="memo-area"></div>
+
+		  <!-- フッター -->
+		  <footer id="bottom-bar">
+		    <span class="icon"></span>
+		    <span class="icon"></span>
+		    <span class="icon"></span>
+		    <span class="icon"></span>
+		    <span class="icon"></span>
+		  </footer>
+
+		</div>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="javascript/common.js"></script>
+		<script type="text/javascript" src="javascript/event.js"></script>
+	</body>
+</html>
