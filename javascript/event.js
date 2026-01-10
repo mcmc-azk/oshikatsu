@@ -25,8 +25,22 @@ function renderCalendar(date) {
       cell.classList.add("other");
     }
 
+	/* 本日クラス付与 */
     if (isToday(d)) {
       cell.classList.add("today");
+    }
+    
+    
+    const dayOfWeek = d.getDay();
+    
+    /* 日曜日クラス付与 */
+    if (dayOfWeek === 0) {
+      cell.classList.add("sunday");
+    }
+    
+    /* 土曜日クラス付与 */
+    if (dayOfWeek === 6) {
+      cell.classList.add("saturday");
     }
 
     cell.dataset.date = formatDate(d);
