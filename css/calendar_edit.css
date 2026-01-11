@@ -29,11 +29,11 @@
 }
 
 #cancel {
-  left: 4vw;
+  left: 25px;
 }
 
 #complate {
-  right: 4vw;
+  right: 25px;
 }
 
 /* タイトルエリア */
@@ -55,6 +55,9 @@
 
 /* 日時エリア */
 #schedule-type-area {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1vh;
   border: none;
   height: auto;
 }
@@ -84,14 +87,13 @@
 }
 
 .datetime {
-  margin-top: 1vh;
   display: flex;
 }
 .date {
   width: 55vw;
 }
 #between {
-  margin-left: 32.5vw;
+  margin-left: 32vw;
   font-size: 1.5vh;
 }
 .time {
