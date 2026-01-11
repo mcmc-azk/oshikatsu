@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFBFF;
+  overflow: hidden;
+  color: #5C1F2C;
+}
+
+/* ヘッダー */
+#header {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+}
+
+/* フッター */
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#menu-bar {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  background: #A92231;
+}
+
+#bottom {
+  position: relative;
+  height: 4vh;
+  background-color: black;
+}
+
+.menu-icon {
+  max-height: 5.5vh;
+}

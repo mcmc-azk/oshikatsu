@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>推し活</title>
+			<!-- CSS -->
+			<link rel="stylesheet" href="css/common.css">
+			<link rel="stylesheet" href="css/calendar_edit.css">
+	</head>
+	<body>
+		<div class="app">
+
+		  <!-- ヘッダー -->
+		  <div id="header">
+		    <img id="cancel" src="item/icon/calendar_delete.png">
+		    <img id="complate" src="item/icon/calendar_regist.png">
+		  </div>
+		  
+		  <!-- タイトルエリア -->
+		  <div id="title-area" class="area">
+		    <div id="icon" class="input"></div>
+		    <div id="title" class="input"></div>
+		  </div>
+		  
+		  <!-- 推し選択エリア -->
+		  <div id="oshi-area" class="area">
+		    <div class="area-title">■ 推しを選択</div>
+		    <div id="oshi" class="input"></div>
+		  </div>
+		  
+		  <!-- 日時エリア -->
+		  <div id="datetime-area" class="area">
+		    <div class="area-title">■ 日時</div>
+		    <div id="schedule-type-area" class="input">
+		      <input type="radio" name="schedule-type" id="day" value="day" checked/>
+		      <label for="day" class="input len2">日付</label>
+		      <input type="radio" name="schedule-type" id="days" value="days"/>
+		      <label for="days" class="input len2">期間</label>
+		      <input type="radio" name="schedule-type" id="rept-week" value="rept-week"/>
+		      <label for="rept-week" class="input len5">繰返(週)</label>
+		      <input type="radio" name="schedule-type" id="rept-month" value="rept-month"/>
+		      <label for="rept-month" class="input len5">繰返(月)</label>
+		      <input type="radio" name="schedule-type" id="rept-year" value="rept-year"/>
+		      <label for="rept-year" class="input len5">繰返(年)</label>
+		    </div>
+		    <div id="from-datetime" class="datetime">
+		      <div id="from-date" class="date input"></div>
+		      <div id="from-time" class="time input"></div>
+		    </div>
+		    <div id="between">|</div>
+		    <div id="to-datetime" class="datetime">
+		      <div id="to-date" class="date input"></div>
+		      <div id="to-time" class="time input"></div>
+		    </div>
+		  </div>
+		  
+		  <!-- URLエリア -->
+		  <div id="url-area" class="area">
+		    <div class="area-title">■ ＵＲＬ</div>
+		    <div id="url" class="input"></div>
+		  </div>
+		  
+		  <!-- 場所エリア -->
+		  <div id="address-area" class="area">
+		    <div class="area-title">■ 場所</div>
+		    <div id="address" class="input"></div>
+		  </div>
+		  
+		  <!-- 内容エリア -->
+		  <div id="content-area" class="area">
+		    <div class="area-title">■ 内容</div>
+		    <div id="content" class="input"></div>
+		  </div>
+
+		  <!-- フッター -->
+		  <footer>
+		    <div id="accent"></div>
+		    <div id="bottom"></div>
+		  </footer>
+
+		</div>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="javascript/common.js"></script>
+		<script type="text/javascript" src="javascript/calendar_edit.js"></script>
+	</body>
+</html>

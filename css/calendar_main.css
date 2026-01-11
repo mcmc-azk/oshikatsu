@@ -1,0 +1,100 @@
+/* ヘッダー */
+#header {
+  background: #A92231;
+}
+
+#current-month {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+#month-label {
+  width: 30vw;
+  text-align: center;
+  font-weight: bold;
+  color: #310a0e;
+  font-size: 2.5vh;
+}
+.month-change-icon {
+  max-height: 2.5vh;
+}
+.calendar-operation-icon {
+  max-height: 4vh;
+}
+
+#header-icons {
+  display: flex;
+  position: absolute;
+  gap: 30px;
+  right: 25px;
+}
+
+/* 曜日 */
+#weekdays {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(7, 1fr);
+  background: #D17589;
+  text-align: center;
+  height: 2.5vh;
+  font-size: 2vh;
+  color: #551119;
+}
+
+.weekday {
+  border-left: 1px solid #8f666e;
+}
+
+/* カレンダー */
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 50vh;
+}
+
+.day {
+  border-left: 1px solid #bda4a9;
+  border-bottom: 1px solid #bda4a9;
+  padding: 2px;
+  font-size: 1.5vh;
+}
+
+.day.other {
+  color: #aaa;
+}
+
+.day.today {
+  background: #eee5ed;
+}
+
+.day.sunday {
+  color: #df0019;
+}
+
+.day.other.sunday {
+  color: #b97981;
+}
+
+.day.saturday {
+  color: #2e00ff;
+}
+
+.day.other.saturday {
+  color: #9b95b4;
+}
+
+/* 日付ヘッダー */
+#day-header {
+  padding-left: 1vw;
+  height: 2.5vh;
+  font-size: 2vh;
+  background: #D17589;
+  color: #551119;
+}
+
+/* メモ */
+#memo-area {
+  height: 40vh;
+}

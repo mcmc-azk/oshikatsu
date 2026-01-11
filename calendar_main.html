@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>推し活</title>
+			<!-- CSS -->
+			<link rel="stylesheet" href="css/common.css">
+			<link rel="stylesheet" href="css/calendar_main.css">
+	</head>
+	<body>
+		<div class="app">
+
+		  <!-- ヘッダー -->
+		  <div id="header">
+		    <div id="current-month">
+		      <img id="prev" class="month-change-icon" src="item/icon/arrow_prev.png">
+		      <div id="month-label">2026年1月</div>
+		      <img id="next" class="month-change-icon" src="item/icon/arrow_next.png">
+		    </div>
+		                  
+		    <div id="header-icons">
+		      <img id="today" class="calendar-operation-icon" src="item/icon/calendar_today.png">
+		      <img id="update" class="calendar-operation-icon" src="item/icon/calendar_update.png">
+		      <img id="add" class="calendar-operation-icon" src="item/icon/calendar_edit.png">
+		    </div>
+		  </div>
+		  
+		  <!-- 曜日 -->
+		  <div id="weekdays">
+		    <div class="weekday">日</div>
+		    <div class="weekday">月</div>
+		    <div class="weekday">火</div>
+		    <div class="weekday">水</div>
+		    <div class="weekday">木</div>
+		    <div class="weekday">金</div>
+		    <div class="weekday">土</div>
+		  </div>
+
+		  <!-- カレンダー -->
+		  <div id="calendar-grid">
+		    <!-- 42マス -->
+		    <div class="day other">28</div>
+		    <!-- … -->
+		    <div class="day today">9</div>
+		  </div>
+
+		  <!-- 日付表示 -->
+		  <div id="day-header">2026年1月9日</div>
+
+		  <!-- 日記 -->
+		  <div id="memo-area"></div>
+
+		  <!-- フッター -->
+		  <footer>
+		    <div id="menu-bar">
+		      <img class="menu-icon" src="item/icon/diary.png">
+		      <img class="menu-icon" src="item/icon/todo.png">
+		      <img class="menu-icon" src="item/icon/calendar.png">
+		      <img class="menu-icon" src="item/icon/favorite.png">
+		      <img class="menu-icon" src="item/icon/setting.png">
+		    </div>
+		    
+		    <div id="bottom"></div>
+		  </footer>
+
+		</div>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="javascript/common.js"></script>
+		<script type="text/javascript" src="javascript/calendar_main.js"></script>
+	</body>
+</html>
