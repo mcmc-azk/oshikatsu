@@ -48,7 +48,7 @@
   width: 7vh;
 }
 #title {
-  width: 70vw;
+  width: 70.5vw;
 }
 
 /* 推しエリア */
@@ -58,7 +58,8 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 1vh;
-  border: none;
+  border-top: none;
+  border-bottom: none;
   height: auto;
 }
 #schedule-type-area input{
@@ -111,7 +112,7 @@
 
 /* フッター */
 #accent {
-  height: 1vh;
+  height: 2vh;
   background: #A92231;
 }
 
